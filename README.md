@@ -15,6 +15,7 @@ Landing page for develpers
  # Overview
  - Developed with html5 and css3
  - Used flexbox for positioning
+ - mobile responsive. breakpoint at 428px
  
  # Links
 [Demo](https://developer-home-page-p1.netlify.app/)

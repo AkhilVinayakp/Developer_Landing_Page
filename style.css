@@ -158,6 +158,9 @@ svg[class="nav-item"]{
   margin-top: 1.3em;
   margin-bottom: 1.4em;
 }
+.bottom-container-mobile{
+  display: none;
+}
 .bottom-container {
   display: flex;
   /* align-items: center; */
@@ -210,6 +213,7 @@ svg[class="nav-item"]{
   padding: 1em 2em; 
   color:  white;
   background-color: blue;
+  border: none;
 }
 
 .download-section {
@@ -310,4 +314,170 @@ svg[class="nav-item"]{
 
 .footer-right .logos-list li {
   cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 428px) {
+  nav {
+    display: none;
+  }
+  header {
+    background:linear-gradient(
+      to right bottom,
+      rgba(18, 11, 28, 0.781),
+      rgba(12, 2, 29, 0.705)
+    ),
+     url(./images/IMAGE\ HERE.png);
+    background-position: center;
+  }
+  .logo {
+    margin-top: 1em;
+  }
+  .header-text h2{
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    /* color: rgb(241, 45, 1); */
+  }
+  .header-text p {
+    font-size: 1em;
+    text-align: center;
+    color: gray;
+  }
+  .header-image {
+    display: none;
+  }
+  .companies {
+    display: flex;
+    width: 100vw;
+    padding: 1em 1em;
+    justify-content: space-around;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card, .card-active {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    width: 80vw;
+    height: 32vh;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .blog-image {
+    /* float: left; */
+    display: none ;
+  }
+  .blog-content {
+    margin-left: 1em;
+    padding-top: 1em;
+    /* margin-bottom: 4em; */
+    width: 80%; 
+    float: right;
+  }
+  .bottom-container {
+    display: none;
+    /* float: left; */
+    /* flex-direction: column; */
+  }
+
+  .bottom-container-mobile{
+    display: flex;
+    height: 34px;
+    align-items: center;
+  }
+  .blog-card-bottom-image {
+    width: 32px;
+    padding-top: 12px;
+  }
+  .blog-card:first-child {
+    background: linear-gradient(
+      to right bottom,
+      rgba(198, 243, 255, 0.781),
+      rgba(180, 223, 220, 0.705)
+    ),url(./images/Rectangle.png) no-repeat;
+    background-size: cover;
+  }
+  .blog-card:nth-child(2){
+    background: linear-gradient(
+      to right bottom,
+      rgba(198, 243, 255, 0.781),
+      rgba(180, 223, 220, 0.705)
+    ),url("./images/Rectangle Copy.png") no-repeat;
+    background-size: cover;
+  }
+  .faq-content {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1em;
+  }
+  .faq-section {
+    flex-direction: column;
+    height: 40vh;
+    padding-left: 0;
+  }
+  .faq-image {
+    display: none;
+  }
+  .download-section {
+    flex-direction: column;
+  }
+  .download-email input {
+    width: 230px;
+  }
+  .download-email form{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+    margin-right:1em;
+  }
+  .download-email button {
+    margin-left: 0em;
+    margin-top: 1em;
+  }
+  .footer-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .footer-left {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .footer-left .list {
+    list-style-type: none;
+    margin-top: 1em;
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list .list-items {
+    margin:auto;
+  }
+  .list .list-items:first-child {
+    margin-right: auto;
+  }
+  .list .list-items:not(:first-child):not(:nth-child(2)){
+    border: 0;
+    padding:auto;
+  }
 }
